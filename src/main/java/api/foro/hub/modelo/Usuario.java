@@ -56,6 +56,10 @@ public class Usuario implements UserDetails {
         return List.of(new SimpleGrantedAuthority(tipo.toString()));
     }
 
+    public Long getId() {
+        return id;
+    }
+
     @Override
     public String getPassword() {
         return password;
@@ -71,6 +75,14 @@ public class Usuario implements UserDetails {
         return true;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
     @Override
     public boolean isAccountNonLocked() {
         return true;
@@ -84,5 +96,9 @@ public class Usuario implements UserDetails {
     @Override
     public boolean isEnabled() {
         return true;
+    }
+
+    public Tipo getTipo() {
+        return tipo;
     }
 }

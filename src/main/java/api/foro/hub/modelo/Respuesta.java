@@ -56,4 +56,28 @@ public class Respuesta {
             this.solucion = datosActualizar.solucion();
         }
     }
+
+    public Long getId() {
+        return id;
+    }
+
+    public Boolean getSolucion() {
+        return solucion;
+    }
+
+    public String getMensaje() {
+        return mensaje;
+    }
+
+    public Topico getTopico() {
+        return topico;
+    }
+
+    public Usuario getAutor() {
+        return autor;
+    }
+
+    public LocalDateTime getFechaCreacion() {
+        return fechaCreacion;
+    }
 }
